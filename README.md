@@ -8,4 +8,4 @@
 
 ## Probando WebR
 
-La **slides** pueden probarse [aquí](https://github.com/perezp44/webR.prueba)
+La **slides** pueden probarse [aquí](https://perezp44.github.io/webR.prueba/#/title-slide)
