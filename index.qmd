@@ -1,0 +1,52 @@
+---
+title: "Probando WebR en Quarto slides"
+author: "Pedro J. Pérez"
+format: revealjs
+execute: 
+  echo: true
+filters:
+  - webr
+---
+
+## Instalación {.smaller}
+
+- lo primero es instalar la extensión para Quarto. Documentación [aquí](https://github.com/coatless/quarto-webr)
+
+```md
+quarto add coatless/quarto-webr
+```
+
+- despues incluirlo el filter WebR en las slides
+
+
+```md
+format: revealjs
+filters:
+  - webr
+```
+
+- Finalmente incluir un "WebR"  chunk
+
+````md
+```{webr-r}
+# set a random seed and generate data
+set.seed(123)
+x <- rnorm(100)
+
+# calculate mean
+mean(x)
+```
+````
+
+---
+
+- Y ya lo tenemos listo
+
+```{webr-r}
+# set a random seed and generate data
+set.seed(123)
+x <- rnorm(100)
+
+# calculate mean
+mean(x)
+```
